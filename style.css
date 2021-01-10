@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+  color: #fff;
+}
+
+h1 {
+  padding: 1em 0 2em;
+}
+
+p {
+  padding: 1em 0 1em;
+}
+
+.container {
+  background-color: #362e27;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+
+.btn {
+  background-color: #961808;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.play-again {
+  background-color: #961808;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
