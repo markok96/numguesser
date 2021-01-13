@@ -23,19 +23,19 @@ submit.addEventListener('click', function(){
     let newGuess = parseInt(guess.value);
 
     if (isNaN(newGuess) || newGuess < min || newGuess > max) {
-        setMessage(`Please enter a number between ${min} and ${max}`, 'red');
+        setMessage(`Unesite broj između ${min} i ${max}`, 'red');
     } 
     else if(newGuess === winningNum) {
-        gameOver(true, `${winningNum} is correct!`);
+        gameOver(true, `${winningNum} je tačan broj, pobedili ste!`);
     } else {
         guessesLeft -= 1;
         if(guessesLeft === 0){
-            gameOver(false, `GAME OVER! The correct number was ${winningNum}`);
+            gameOver(false, `IGRA ZAVRŠENA! Traženi broj je ${winningNum}`);
         }
         else {
             guess.style.borderColor = 'red';
             guess.value = '';
-            setMessage(`${newGuess} isn't correct, you have ${guessesLeft} guesses left`, 'red');
+            setMessage(`${newGuess} nije traženi broj, imate još ${guessesLeft} pokušaja`, 'red');
         }
     }
 });
