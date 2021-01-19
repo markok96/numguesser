@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 h1, h2, h3, h4, p {
   color: #fff;
 }
@@ -21,6 +25,10 @@ p {
   margin: 0 auto;
   text-align: center;
   height: 100vh;
+}
+
+#guess-input {
+  padding: .5em;
 }
 
 .btn {
